@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test your Speed</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .center {
+        background-color: #2891dd;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+      .main {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .heding {
+        color: white;
+        font-family: arial;
+      }
+      .msg {
+        color: white;
+        margin: 10px 0px;
+        font-size: 15px;
+        font-family: sans-serif;
+        font-weight: 200;
+      }
+      textarea {
+        width: 80%;
+        background-color: #444444;
+        box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.589);
+        padding: 10px;
+        border-radius: 10px;
+        outline: none;
+      }
+      .btn {
+        color: black;
+        padding: 5px 15px;
+        border-radius: 10px;
+        /* border: none; */
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <div class="main">
+        <div class="heding">
+          <h1>Welcome to Typing Speed Test</h1>
+          <h2 class="msg"></h2>
+        </div>
+        <textarea
+          id="myWord"
+          cols="100"
+          rows="10"
+          placeholder="Remember be nice!"
+        ></textarea>
+        <br />
+        <button class="btn">Start</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
