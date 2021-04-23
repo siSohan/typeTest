@@ -22,7 +22,7 @@ let hint = [
 
 const makemsg = function () {
   sms = Math.floor(Math.random() * hint.length);
-  console.log(sms);
+  msg.style.color = 'white';
   msg.innerHTML = hint[sms];
   const time = new Date();
   start = time.getTime();
