@@ -39,6 +39,7 @@ const doneWork = function () {
   console.log(totalTime);
   const wpm = Math.round((setTypeStr(text.value) / totalTime) * 60);
   console.log(wpm);
+  msg.style.color = 'black';
   msg.innerHTML = `Your typed total ${wpm} words per minutes ${errorsms(
     text.value,
     hint[sms]
@@ -54,7 +55,7 @@ const errorsms = function (str1, str2) {
     }
   });
   console.log(mainTxt.length);
-
+  
   return ` ${count} correct out of ${
     mainTxt.length
   } words and total number of error are ${mainTxt.length - count} `;
